@@ -1,0 +1,60 @@
+{
+    "name": "n8n-nodes-vuela",
+    "version": "0.1.2",
+    "description": "n8n node to interact with Vuela.ai API for AI-powered content and video generation",
+    "keywords": [
+      "n8n-community-node-package",
+      "vuela",
+      "ai",
+      "content-generation",
+      "video-generation",
+      "artificial-intelligence",
+      "va360",
+      "spanish",
+      "automation"
+    ],
+    "license": "MIT",
+    "homepage": "https://vuela.ai",
+    "author": {
+      "name": "Valen - VA360.pro",
+      "email": "contact@va360.pro",
+      "url": "https://va360.pro"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/vuela-ai/n8n-node-vuela"
+    },
+    "main": "index.js",
+    "scripts": {
+      "build": "tsc && node scripts/post-build.js",
+      "dev": "tsc --watch",
+      "format": "prettier nodes credentials --write",
+      "lint": "eslint nodes/**/*.ts credentials/**/*.ts",
+      "lintfix": "eslint nodes/**/*.ts credentials/**/*.ts --fix",
+      "prepublishOnly": "npm run build && npm run lint"
+    },
+    "files": [
+      "dist"
+    ],
+    "n8n": {
+      "n8nNodesApiVersion": 1,
+      "credentials": [
+        "dist/credentials/VuelaApi.credentials.js"
+      ],
+      "nodes": [
+        "dist/nodes/Vuela/Vuela.node.js"
+      ]
+    },
+    "devDependencies": {
+      "@types/express": "^4.17.21",
+      "@types/node": "^20.10.5",
+      "@typescript-eslint/parser": "^6.14.0",
+      "eslint": "^8.56.0",
+      "eslint-plugin-n8n-nodes-base": "^1.16.1",
+      "prettier": "^3.1.1",
+      "typescript": "~5.3.3"
+    },
+    "peerDependencies": {
+      "n8n-workflow": "~1.32.0"
+    }
+  }

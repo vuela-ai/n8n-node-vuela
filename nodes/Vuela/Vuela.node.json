@@ -1,0 +1,27 @@
+{
+	"node": "n8n-nodes-base.vuela",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Marketing & Content",
+		"Artificial Intelligence"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://vuela.ai/es/documentacion"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://vuela.ai/es/documentacion"
+			}
+		],
+		"communityDocumentation": [
+			{
+				"url": "https://va360.pro/"
+			}
+		]
+	},
+	"alias": ["AI Content", "Video Generation", "Vuela.ai", "VA360"]
+}
